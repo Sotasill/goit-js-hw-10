@@ -23,3 +23,98 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.timer-body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer {
+  display: flex;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 2rem;
+}
+
+.label {
+  font-size: 1rem;
+}
+
+.timer-nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 25px;
+  padding: 20px;
+  border-bottom: 1px solid black;
+  background-color: rgb(237, 234, 231);
+}
+
+.timer-nav a {
+  color: rgb(82, 91, 217);
+  padding: 10px, 20px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.timer-nav a:hover {
+  color: rgb(5, 9, 66);
+  transform: scale(1.1);
+}
+
+.timer-section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  padding: 0 10px;
+  position: relative;
+}
+
+.timer-section::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url(https://ukranews.com/upload/news/2019/10/27/5db4d1e1d57c4-time-3222267-960-720_1200.jpg), #000;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+}
+
+.container-timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  gap: 20px;
+  padding: 32px;
+  border: 2px solid #080101;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(9px);
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+
