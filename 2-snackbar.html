@@ -1,18 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Task-2: Snackbar</title>
     
-  <script type="module" crossorigin src="/goit-js-hw-10/assets/styles-e814b391.js"></script>
-  <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-065802e4.css">
-</head>
-<body>
-    <a href="./index.html">Go to Main</a>
-    <a href="./1-timer.html">Go to Task-1: Timer</a>
-    
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-4ee8e6ed.css">
+  </head>
+  <body class="snackbar-body">
+    <nav class="timer-nav">
+      <a href="./index.html">Go to Main</a>
+      <a href="./1-timer.html">Go to Task-1: Timer</a>
+    </nav>
+
+    <section class="snackbar-section">
+      <div class="snackbar-container">
+        <form class="form">
+          <label>
+            Delay (ms)
+            <input class="delay" type="number" name="delay" required />
+          </label>
+
+          <fieldset>
+            <legend>State</legend>
+            <label>
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+            <label>
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </fieldset>
+
+          <button class="snackbar-btn" type="submit">Create notification</button>
+        </form>
+      </div>
+    </section>
 
     
-</body>
+  </body>
 </html>
