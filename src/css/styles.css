@@ -92,13 +92,15 @@ body {
 
 .timer-section::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 100%;
   height: 100%;
-  background: url(https://ukranews.com/upload/news/2019/10/27/5db4d1e1d57c4-time-3222267-960-720_1200.jpg), #000;
+  background: url(https://ukranews.com/upload/news/2019/10/27/5db4d1e1d57c4-time-3222267-960-720_1200.jpg),
+    #000;
   background-position: center;
   background-size: cover;
   z-index: -1;
+  border-image: fill 0 linear-gradient(#0001, #000);
 }
 
 .container-timer {
@@ -117,4 +119,53 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
+button {
+  width: 75px;
+  height: 40px;
+  top: 372px;
+  left: 28px;
+  padding: 8px 16px 8px 16px;
+  gap: 10px;
+  border-radius: 8px;
+  opacity: 0px;
+  border: none;
+  background-color: #4e75ff;
+  color: #ffffff;
+}
 
+button:hover {
+  background-color: #6c8cff;
+}
+
+button:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+#datetime-picker {
+  width: 272px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: left;
+  padding: 10px;
+}
+
+#datetime-picker:hover {
+  border-color: #000000;
+  outline: none;
+}
+
+#datetime-picker:focus {
+  border-color: #4e75ff;
+  outline: none;
+}
+
+#datetime-picker:disabled {
+  border-color: #FAFAFA;
+  outline: none;
+  background-color: #FAFAFA;
+  color: #808080;
+}
